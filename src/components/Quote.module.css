@@ -1,0 +1,51 @@
+.quote {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 80%;
+  margin: 10rem auto 3rem auto;
+  padding: 5rem 4rem;
+  border-radius: 12px;
+}
+
+.quote_text {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.quote_author {
+  text-align: right;
+  font-weight: 600;
+}
+
+blockquote {
+  text-indent: -0.45em;
+}
+@supports (hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+@media only screen and (min-width: 800px) {
+  .quote {
+    width: 50%;
+  }
+
+  .quote_text {
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 8em;
+  background: rgb(196, 26, 26);
+  color: rgb(196, 26, 26);
+  padding: 0 1em;
+}
+
+.nav_image {
+  width: 140px;
+  margin-left: -20px;
+  align-self: flex-end;
+  object-fit: contain;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.nav_center {
+  text-align: center;
+  margin-right: 2em;
+}
+
+.nav_title {
+  color: rgb(23, 23, 23);
+  font-size: 1.4rem;
+  font-family: "Carter One", cursive;
+  /* margin-right: 2em; */
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.324);
+}
+
+.nav_subtitle {
+  color: rgb(23, 23, 23);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.nav_menu {
+  overflow: hidden;
+  list-style: none;
+  /* padding-top: 2em; */
+  position: absolute;
+  background: white;
+  top: 8em;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.nav_menu_icon {
+  color: black;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.open_menu {
+  font-size: 2em;
+}
+
+.nav_menu.active {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.nav_item {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.nav_link {
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6em;
+  color: rgb(196, 26, 26);
+  width: 100%;
+  transition: all 0.3s ease-out;
+  display: block;
+}
+
+.nav_link:hover {
+  background-color: rgb(196, 26, 26);
+  color: white;
+}
+
+@media only screen and (min-width: 850px) {
+  .nav_image {
+    width: 200px;
+  }
+
+  .nav_title {
+    font-size: 2rem;
+  }
+
+  .nav_menu {
+    position: relative;
+    display: flex;
+    transform: none;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+    top: 0;
+    transition: none;
+  }
+
+  .nav_link {
+    color: black;
+    font-size: 1.5rem;
+    right: 5rem;
+  }
+
+  .nav_menu_icon {
+    display: none;
+  }
+}
