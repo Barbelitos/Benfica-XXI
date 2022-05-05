@@ -42,6 +42,7 @@ const Navbar = () => {
               <NavLink
                 style={navLinkStyle}
                 className={styles.nav_link}
+                onClick={handleOpenMenu}
                 to={item.url}
               >
                 {item.title}

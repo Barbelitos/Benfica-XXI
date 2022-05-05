@@ -31,7 +31,6 @@
   color: rgb(23, 23, 23);
   font-size: 1.4rem;
   font-family: "Carter One", cursive;
-  /* margin-right: 2em; */
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.324);
 }
 
@@ -44,7 +43,6 @@
 .nav_menu {
   overflow: hidden;
   list-style: none;
-  /* padding-top: 2em; */
   position: absolute;
   background: white;
   top: 8em;
