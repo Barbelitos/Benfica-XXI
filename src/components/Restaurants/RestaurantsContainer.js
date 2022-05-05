@@ -1,4 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
+import { Grid } from "@mui/material";
 
 import classes from "./RestaurantsContainer.module.css";
 
@@ -21,7 +22,11 @@ const RestaurantsContainer = ({ restaurants }) => {
   };
 
   return (
-    <div className={classes["restaurants-container"]}>
+    <Grid
+      container
+      justifyContent="center"
+      className={classes["restaurants-container"]}
+    >
       {restaurants.length > 0 ? (
         renderRestaurants()
       ) : (
@@ -29,7 +34,7 @@ const RestaurantsContainer = ({ restaurants }) => {
           No restaurants found. Please try again with different search terms.
         </p>
       )}
-    </div>
+    </Grid>
   );
 };
 

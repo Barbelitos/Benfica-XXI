@@ -1,5 +1,5 @@
 .playlist {
-  margin: 2em auto;
+  margin: 1em auto;
   width: 80%;
   height: 380px;
 }
@@ -9,5 +9,5 @@
   height: 100%;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }

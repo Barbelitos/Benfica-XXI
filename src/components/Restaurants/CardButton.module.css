@@ -1,20 +1,19 @@
 .card-button {
-  background: none;
   border: none;
   color: white;
   background-color: rgb(192, 26, 26);
   font-weight: 600;
   cursor: pointer;
-  padding: 0.3rem;
-  border-radius: 12px;
+  padding: 0.5rem;
+  /* border-radius: 15px; */
+  width: 100px;
 }
 
 .card-button:hover {
-  color: black;
-  background-color: rgb(192, 26, 26);
+  background-color: rgb(125, 16, 16);
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .card-button {
     margin-bottom: 0.6rem;
   }

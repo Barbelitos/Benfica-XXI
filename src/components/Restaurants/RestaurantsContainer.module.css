@@ -1,6 +1,4 @@
 .restaurants-container {
-  display: flex;
-  justify-content: center;
   gap: 4%;
   flex-wrap: wrap;
   width: 90%;

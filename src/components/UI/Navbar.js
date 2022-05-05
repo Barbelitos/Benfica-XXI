@@ -15,6 +15,10 @@ const Navbar = () => {
     setClicked(!clicked);
   };
 
+  const handleCloseMenu = () => {
+    setClicked(false);
+  };
+
   const navLinkStyle = ({ isActive }) => {
     return {
       color: isActive ? "white" : "",
@@ -42,8 +46,8 @@ const Navbar = () => {
               <NavLink
                 style={navLinkStyle}
                 className={styles.nav_link}
-                onClick={handleOpenMenu}
                 to={item.url}
+                onClick={handleCloseMenu}
               >
                 {item.title}
               </NavLink>

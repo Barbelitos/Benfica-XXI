@@ -1,3 +1,4 @@
+import { Stack } from "@mui/material";
 import FilterButton from "./FilterButton";
 import styles from "./RestaurantFilter.module.css";
 
@@ -8,7 +9,7 @@ const RestaurantFilter = ({
   handleOthersFilter,
 }) => {
   return (
-    <div className={styles.buttons_container}>
+    <Stack direction="row" className={styles.buttons_container}>
       <FilterButton text="Lisboa" handleFilter={handleLisbonFilter} />
       <FilterButton text="Porto" handleFilter={handlePortoFilter} />
       <FilterButton text="Outros locais" handleFilter={handleOthersFilter} />
@@ -21,7 +22,7 @@ const RestaurantFilter = ({
         text="Limpar filtro"
         handleFilter={handleClearFilter}
       />
-    </div>
+    </Stack>
   );
 };
 
